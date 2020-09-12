@@ -1,25 +1,158 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World
-            </h1>
-            <p class="subtitle">
-                My first website with <strong>Bulma</strong>!
-            </p>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="hero is-success is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img
+                  src="https://bulma.io/images/bulma-type-white.png"
+                  alt="Logo"
+                />
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-active"> Home </a>
+                <a class="navbar-item"> Examples </a>
+                <a class="navbar-item"> Documentation </a>
+                <span class="navbar-item">
+                  <a class="button is-success is-inverted">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="form-group">
+            <input class="input is-medium" id='baseCurrency' type="text" placeholder="Base Currency" />
+            <input class="input is-medium" id='comparisonCurrency' type="text" placeholder="Comparison Currency" />
+            <div class="field">
+                <div class="control has-icons">
+                  <div class="select">
+                    <select id='baseCurrencyDrop'>
+                      <option selected>Base Currency</option>
+                      <option value='CAD'>Canadian Dollar 'CAD'</option>
+                      <option value='HKD'>Hong Kong Dollar 'HKD'</option>
+                      <option value='ISK'>Icelandic Króna 'ISK'</option>
+                      <option value='PHP'>Philippine Peso 'PHP'</option>
+                      <option value='DKK'>Danish Krone 'DKK'</option>
+                      <option value='HUF'>Hungarian Forint 'HUF'</option>
+                      <option value='CZK'>Czech Koruna 'CZK'</option>
+                      <option value='GBP'>British Pound Sterling 'GBP'</option>
+                      <option value='RON'>Romanian Leu 'RON'</option>
+                      <option value='SEK'>Swedish Krona 'SEK'</option>
+                      <option value='IDR'>Indonesian Rupa 'IDR'</option>
+                      <option value='INR'>Indian Rupee 'INR'</option>
+                      <option value='BRL'>Brazilial Real 'BRL'</option>
+                      <option value='RUB'>Russian Ruble 'RUB'</option>
+                      <option value='HRK'>Croatian Kuna 'HRK'</option>
+                      <option value='JPY'>Japanese Yen 'JPY'</option>
+                      <option value='THB'>Thai Baht 'THB'</option>
+                      <option value='CHF'>Swiss Franc 'CHF'</option>
+                      <option value='EUR'>European Euro 'EUR'</option>
+                      <option value='MYR'>Malaysian Ringgit 'MYR'</option>
+                      <option value='BGN'>Bulgarian Lev 'BGN'</option>
+                      <option value='TRY'>Turkish lira 'TRY'</option>
+                      <option value='CNY'>Chinese Yuan 'CNY'</option>
+                      <option value='NOK'>Norwegian Krone 'NOK'</option>
+                      <option value='NZD'>New Zealand Dollar 'NZD'</option>
+                      <option value='ZAR'>South African Rand 'ZAR'</option>
+                      <option value='USD'>United States Dollar 'USD'</option>
+                      <option value='MXN'>Mexican Peso 'MXN'</option>
+                      <option value='SGD'>Singapore Dollar 'SGD'</option>
+                      <option value='AUD'>Australian Dollar 'AUD'</option>
+                      <option value='ILS'>Israeli New Shekel 'ILS'</option>
+                      <option value='KRW'>Korean Won 'KRW'</option>
+                      <option value='PLN'>Poland Złoty 'PLN'</option>
+
+                      
+                    </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control has-icons">
+              <div class="select">
+                <select id='comparisonCurrencyDrop'>
+                    <option selected>Comparison Currency</option>
+                    <option value='CAD'>Canadian Dollar 'CAD'</option>
+                    <option value='HKD'>Hong Kong Dollar 'HKD'</option>
+                    <option value='ISK'>Icelandic Króna 'ISK'</option>
+                    <option value='PHP'>Philippine Peso 'PHP'</option>
+                    <option value='DKK'>Danish Krone 'DKK'</option>
+                    <option value='HUF'>Hungarian Forint 'HUF'</option>
+                    <option value='CZK'>Czech Koruna 'CZK'</option>
+                    <option value='GBP'>British Pound Sterling 'GBP'</option>
+                    <option value='RON'>Romanian Leu 'RON'</option>
+                    <option value='SEK'>Swedish Krona 'SEK'</option>
+                    <option value='IDR'>Indonesian Rupa 'IDR'</option>
+                    <option value='INR'>Indian Rupee 'INR'</option>
+                    <option value='BRL'>Brazilial Real 'BRL'</option>
+                    <option value='RUB'>Russian Ruble 'RUB'</option>
+                    <option value='HRK'>Croatian Kuna 'HRK'</option>
+                    <option value='JPY'>Japanese Yen 'JPY'</option>
+                    <option value='THB'>Thai Baht 'THB'</option>
+                    <option value='CHF'>Swiss Franc 'CHF'</option>
+                    <option value='EUR'>European Euro 'EUR'</option>
+                    <option value='MYR'>Malaysian Ringgit 'MYR'</option>
+                    <option value='BGN'>Bulgarian Lev 'BGN'</option>
+                    <option value='TRY'>Turkish lira 'TRY'</option>
+                    <option value='CNY'>Chinese Yuan 'CNY'</option>
+                    <option value='NOK'>Norwegian Krone 'NOK'</option>
+                    <option value='NZD'>New Zealand Dollar 'NZD'</option>
+                    <option value='ZAR'>South African Rand 'ZAR'</option>
+                    <option value='USD'>United States Dollar 'USD'</option>
+                    <option value='MXN'>Mexican Peso 'MXN'</option>
+                    <option value='SGD'>Singapore Dollar 'SGD'</option>
+                    <option value='AUD'>Australian Dollar 'AUD'</option>
+                    <option value='ILS'>Israeli New Shekel 'ILS'</option>
+                    <option value='KRW'>Korean Won 'KRW'</option>
+                    <option value='PLN'>Poland Złoty 'PLN'</option>
+                </select>
+                <button class="button is-primary" id='submitButton'>Success</button>
+            </div>
+          </div>
         </div>
+      </div>
+          </div>
+      
+
+      <!-- Hero footer: will stick at the bottom -->
     </section>
-</body>
-<script src="index.js"></script>
-<script src="get.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </body>
+  <script src="index.js"></script>
+  <script src="get.js"></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+  ></script>
 </html>

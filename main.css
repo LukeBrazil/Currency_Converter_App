@@ -1,0 +1,14 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+.input {
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    float: left;
+    padding: 10px;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
